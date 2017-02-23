@@ -6,7 +6,8 @@
 
 if node['platform_family'] == "rhel"
 	package = "httpd"
-else if node['platform_family'] == "debian"
+
+elsif node['platform_family'] == "debian"
 end
 
 package 'apache2' do
